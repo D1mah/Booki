@@ -243,3 +243,222 @@ form{
 .filtre_p{
     padding-top:10px;
 }
+
+
+/* Main */
+/* main global properties*/
+.heberg_glob_main a:hover{ 
+    box-shadow: 5px 5px 4px #BBB9B7 ;
+}
+
+.heberg_popu a:hover{
+    border-radius: 12px;
+    box-shadow: 5px 5px 4px #BBB9B7 ;
+}
+
+.activite a:hover{
+    border-radius: 13px;
+    box-shadow: 5px 5px 4px #BBB9B7 ;
+}
+
+
+/* hebergement section */
+.hebergement {
+    display: flex;
+    margin-top: 25px;
+}
+
+.heberg_glob {
+    flex:3;
+    background-color: #F2F2F2;
+    border-radius: 12px ;
+    padding-top: 15px;
+    
+    display:flex;
+    flex-direction: column;
+    margin-right: 20px;
+    
+}
+
+
+.heberg_glob_main{
+    height: 200%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between; 
+    margin-right: 20px;
+    margin-left:20px   
+}
+
+/* ATTENTION ANCIENNEMENT HOST DEVENU HOST LINK */
+.host-link{
+    width: 192px;
+    height: 150px;
+    border: 3px white solid;
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 1px #BBB9B7;
+    border-radius: 17px; 
+}
+
+.host{
+    width:100%;
+    height: 100%;
+    display:flex;
+    align-items: flex-end;
+    border-radius: 17px;
+}
+
+#host_cannebiere{
+    background: url("../assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    background-size: cover;
+    background-position:  bottom 25px center;     
+}
+
+#host_port{
+    background: url("../assets/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    background-size: cover;
+    background-position: bottom 25px center;
+}
+
+#host_mouettes{
+    background: url("../assets/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    background-size: cover;
+    background-position: bottom 25px center;
+}
+
+#host_mer{
+    background: url("../assets/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    background-size: cover;
+    background-position: bottom 7px center;}
+    
+    #host_panier{
+        background: url("../assets/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+        background-size: cover;
+        background-position:  bottom 25px center;
+    }
+    
+    #host_amina{
+        background: url("../assets/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+        background-size: cover;
+        background-position: center bottom 33%;
+    }
+    
+    .description{ 
+        width:100%;
+        height:35%;
+        border-radius: 0px 0px 12px 12px;
+        background-color: white;
+        font-size: 90%;
+        padding-left: 7px;
+        line-height: 5px;
+        /* padding-bottom: 4px; */
+        padding-top:6px;
+        
+    }
+    
+    .rating{
+        font-size: 110%;
+        line-height: 0px;
+        color:#F2F2F2;
+    }
+    
+    
+    .more p{
+        padding-bottom: 10px;
+        padding-top: 0%;
+        padding-left: 20px; 
+        font-family: 'ralewaybold', Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+        font-size:110%;
+    }
+    .more a:hover{
+        text-decoration:underline black;
+    }
+
+    /* aside: popular section */
+
+    aside{
+        flex:1;
+        background-color: #F2F2F2;
+        border-radius: 12px;
+        padding-right: 20px;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column; 
+    }
+    
+    .heberg_popu_main{
+        padding-left: 20px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height:80%;   
+    }
+    
+    
+    .heberg_popu_title{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .heberg_popu_icon{
+        width:36px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        color:black;
+    }
+    
+    .host_p{
+        height: 90px;
+        width:228px;
+        display: flex;
+        background-color: white;
+        border-radius: 12px;
+        border: 3px white solid;
+        box-shadow: 1px 1px 1px #BBB9B7;   
+    }
+    
+    .img_p{
+        width:110px;
+        height:100%;
+        border-radius: 12px 0px 0px 12px;
+        margin-right: 5%;
+    }
+    
+    
+    .img_size{
+        width:100%;
+        height:100%;
+        border-radius: 12px 0px 0px 12px;
+    }
+    
+    
+    .description_p{
+        display:flex;
+        flex-direction: column;
+        width:65%;
+        height:100%;
+        font-size:80%;
+        
+    }
+    .text_desc_p{
+        height:60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .text_desc_p p{
+        margin-top:5px;
+    }
+    
+    .rating_p{
+        height:40%;
+        font-size: 110%;   
+        margin-bottom: 0%;
+        color:#F2F2F2;  
+    }
+
+
