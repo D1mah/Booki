@@ -290,7 +290,6 @@ form{
     margin-left:20px   
 }
 
-/* ATTENTION ANCIENNEMENT HOST DEVENU HOST LINK */
 .host-link{
     width: 192px;
     height: 150px;
@@ -620,4 +619,194 @@ footer a{
 .page_footer a:hover{
     text-decoration: underline;
 } 
+
+
+    /* ------------------------------Responsiveness------------------------------ */
+
+
+
+/* tablet (768 à 991px) */
+@media all and (min-width: 768px) and (max-width: 991px){
+    .bloc_page{
+        width:auto;
+    }
+    
+    /* global properties */
+    h1{
+        font-size: 115%;
+    }
+    
+    h2{
+        font-size: 105%;
+    }
+    
+    h3{
+        font-size: 90%;
+    }
+    p{
+        font-size: 85%;
+        font-family: 'ralewayregular';
+        color:black;
+    }
+    
+    /* Header */
+    nav{
+        width:auto;
+        
+    }
+    .recherche{
+        width: auto;    
+        align-items: center;
+    }
+    
+    .filtre_p{
+        font-family: 'ralewayregular', Arial, sans-serif;
+    }
+    
+    
+    /* Main section */
+    
+    /* popular section  */
+    
+    .hebergement {
+        width:auto;
+        flex-direction: column-reverse;
+    }
+    
+    aside{
+        padding-right: 0px;
+    }
+    
+    .heberg_popu_main{
+        flex-direction: row;
+        justify-content: space-between;
+        width: auto;
+        margin-bottom: 20px;
+    }
+    
+    .host_p_center{
+        flex:1;
+        width:auto;
+        margin-right: 20px;
+    }
+    
+    .host_p{
+        width:100%;
+        
+    }
+    
+    .text_desc_p h3{
+        font-size:100%        
+    }
+    
+    
+    /* hebergement section */
+    
+    .heberg_glob{
+        width:auto;
+        margin-right: 0px;
+        margin-left: 0px;
+        background-color: white;
+        border-radius: 0px ;
+    }
+    
+    .host-link{
+        flex:1;
+        width:30%;
+        height:170px;
+        min-width: 192px;
+        margin-left: 20px;
+        
+    }
+    
+    .host_down{
+        width: 30%;
+        height:170px;
+        min-width: 192px;
+        margin-left: 20px;
+        
+    }
+    
+    .more{
+        background-color: white;
+    }
+    
+    /* activity section */
+    
+    .activite{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        margin-top:0;
+        background-color:#F2F2F2;
+        border-radius: 12px;
+        padding-top: 15px;
+    }
+    .activite h1{
+        margin-left: 20px;
+    }
+    
+    .activite_main{
+        width:auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+        margin-right:unset;
+        margin-bottom:0px;
+    }
+    .activite_main_half{
+        width: 100%;
+        margin-right: unset;
+        justify-content: unset;
+        flex:unset;
+        margin-bottom: 28px;
+    }
+
+
+    .act_largeur{
+        min-width: 220px;
+        flex:1;
+        margin-right:0px;
+        height: 200px;
+        
+    }
+    
+    .act_space{
+        flex:2;
+        flex-direction:row ;
+        justify-content: unset; 
+        min-width: unset;
+        max-width:unset;
+        margin-right: unset;
+        height: 200px;
+        width:100%;
+    }
+    
+    
+    .act_space_link_margin{
+        margin-right: clamp(2rem, -20.3857rem + 46.6368vw, 8.5rem);
+        margin-left:clamp(2rem, -20.3857rem + 46.6368vw, 8.5rem);
+    }
+    
+    
+    
+    #act_ndg, #act_longchamp, #act_fort,#act_frioul {
+        width: 220px;
+        height:200px;
+        flex:1;
+    }
+    
+    
+    .act_description {
+        height:45px;
+        display :flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    /* footer */
+    .page_footer{
+        background-color: white;
+    }
+}
 
