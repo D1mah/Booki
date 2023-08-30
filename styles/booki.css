@@ -36,3 +36,77 @@
     font-style: normal;
     font-display: swap;
 }
+
+/* General Properties */
+
+.bloc_page{
+    max-width:992px;
+    margin:auto;
+    font-family: 'ralewaythin', Arial, sans-serif;
+    color: black;
+}
+
+h1, h2, h3{
+    font-family: 'ralewaybold', Arial, sans-serif;
+}
+
+h1, h2{
+    padding-left: 20px;
+}
+
+h1{
+    font-size: 150%;
+}
+
+h2{
+    font-size: 130%;
+    padding-bottom:5px ;
+}
+
+h3{
+    font-size: 100%;
+    margin-bottom: 1px;
+    margin-top: 5px;
+}
+p{
+    font-size: 85%;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+span{
+    color:#0065FC;
+}
+
+/* Header */
+/* Logo */
+.logo_nav{
+    display:flex;
+    justify-content: space-between;
+}
+header img{
+    width:90px;
+    height: 50px;
+    margin: 0px 0px 10px 15px;
+}
+
+/* nav */
+nav ul{
+    margin-top: 0px;
+    list-style-type: none;
+    display: flex;    
+}
+nav li{
+    margin-top: 20px;
+    margin-right: 40px;
+}
+nav a{
+    font-size: 95%; 
+    color: black;
+    padding: 20px 10px 10px 10px;
+}
+nav a:hover{
+    color:#0065FC;
+    border-top: 2px solid #0065FC;
+}
