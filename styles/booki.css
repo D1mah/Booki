@@ -111,8 +111,6 @@ nav a:hover{
     border-top: 2px solid #0065FC;
 }
 
-
-/* body */
 /* Search section */
 
 form{
@@ -245,6 +243,7 @@ form{
 }
 
 
+
 /* Main */
 /* main global properties*/
 .heberg_glob_main a:hover{ 
@@ -374,9 +373,9 @@ form{
     .more a:hover{
         text-decoration:underline black;
     }
-
+    
     /* aside: popular section */
-
+    
     aside{
         flex:1;
         background-color: #F2F2F2;
@@ -460,629 +459,629 @@ form{
         color:#7F7F7F32;  
         margin-top: 20px;
     }
-
-
-/* Activity section */
-    
-.activite{
-    margin-top: 30px;
-}
-
-.activite_main{
-    width:100%;
-    display:flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    margin-right: min(5%, 20px);
-    padding-left: 20px;
-    
-}
-.activite_main_half{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: min(5%, 20px);
-    flex:1;
-}
-
-.act_photo{
-    display:flex;
-    align-items: flex-end;
-    border-radius: 13px;
-    box-shadow: 2px 2px 2px #BBB9B7;
-}
-
-.act_largeur, .act_space{
-    flex:1;
-    min-width: 185px;
-    max-width:220px;
-    margin-right: min(1.6%, 30px);
-    height: 300px;
-    width:100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#act_vp, #act_calanques{
-    height: 300px ;
-}
-
-.act_description{
-    background-color: white;
-    width:calc(100%);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display:inline-block;
-    height:35px;
-    border-radius: 0px 0px 11px 11px;
-    padding-left:10px;
-    font-size: 90%;  
-    display:flex;
-    flex-direction: column;
-    justify-content: center; 
-}
-
-.act_description h3{
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-#act_vp{
-    background: url('../assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-#act_fort{
-    height: 160px;
-    background: url('../assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    width:100%;
-}
-
-#act_frioul{
-    height:110px;
-    background: url('../assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    width:100%;
-    
-}
-
-#act_calanques{
-    background: url('../assets/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-#act_ndg{
-    height: 130px;
-    background: url('../assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    width:100%;
-}
-
-#act_longchamp{
-    height:140px;
-    background: url('../assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    width:100%;
-}
-
-
-/* footer */
-.page_footer{
-    display:flex;
-    background-color: #F2F2F2;
-    margin: auto;
-    max-width:992px;
-    padding:0 min(20px, 100px);
-    font-family: 'ralewaythin', Arial, sans-serif;
-    color: black;
-}
-
-.f_div{
-    flex:1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 30%;
-}
-
-.f_header{
-    margin-top: 10px;
-}
-
-.f_header h2{
-    padding-left: 0;
-    font-size:120%;
-}    
-
-
-footer ul{
-    list-style-type: none;
-    padding-left: 0px;
-    margin-top: 0px;
-}
-
-footer a{
-    color: black;
-    text-decoration: none;
-    font-size: 80%;
-    
-}
-
-.page_footer a:hover{
-    text-decoration: underline;
-} 
-
-
-    /* ------------------------------Responsiveness------------------------------ */
-
-
-
-/* tablet (768 à 991px) */
-@media all and (min-width: 768px) and (max-width: 991px){
-    .bloc_page{
-        width:auto;
-    }
-    
-    /* global properties */
-    h1{
-        font-size: 130%;
-    }
-    
-    h2{
-        font-size: 120%;
-    }
-    
-    h3{
-        font-size: 100%;
-    }
-    p{
-        font-size: 90%;
-        font-family: 'ralewayregular';
-        color:black;
-    }
-    
-    /* Header */
-    nav{
-        width:auto;
-        
-    }
-    .recherche{
-        width: auto;    
-        align-items: center;
-    }
-    
-    .filtre_p{
-        font-family: 'ralewayregular', Arial, sans-serif;
-    }
     
     
-    /* Main section */
-    
-    /* popular section  */
-    
-    .hebergement {
-        width:auto;
-        flex-direction: column-reverse;
-    }
-    
-    aside{
-        padding-right: 0px;
-    }
-    
-    .heberg_popu_icon{
-        margin-right: 20px;
-    }
-    .heberg_popu_main{
-        flex-direction: row;
-        justify-content: space-between;
-        width: auto;
-        margin-bottom: 20px;
-    }
-    
-    .host_p_center{
-        flex:1;
-        width:auto;
-        margin-right: 20px;
-    }
-    
-    .host_p{
-        width:100%;
-        
-    }
-    
-    .text_desc_p h3{
-        font-size:100%        
-    }
-    
-    
-    /* hebergement section */
-    
-    .heberg_glob{
-        width:auto;
-        margin-right: 0px;
-        margin-left: 0px;
-        background-color: white;
-        border-radius: 0px ;
-    }
-    
-    .host-link{
-        flex:1;
-        width:30%;
-        height:170px;
-        min-width: 192px;
-        margin-left: 20px;
-        
-    }
-    
-    .host_down{
-        width: 30%;
-        height:170px;
-        min-width: 192px;
-        margin-left: 20px;
-        
-    }
-    
-    .more{
-        background-color: white;
-    }
-    
-    /* activity section */
+    /* Activity section */
     
     .activite{
-        width:100%;
-        display: flex;
-        flex-direction: column;
-        margin-top:0;
-        background-color:#F2F2F2;
-        border-radius: 12px;
-        padding-top: 15px;
-    }
-    .activite h1{
-        margin-left: 20px;
+        margin-top: 30px;
     }
     
     .activite_main{
-        width:auto;
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        margin-right: min(5%, 20px);
         padding-left: 20px;
-        padding-right: 20px;
-        flex-direction: column;
-        margin-right:unset;
-        margin-bottom:0px;
+        
     }
     .activite_main_half{
-        width: 100%;
-        margin-right: unset;
-        justify-content: unset;
-        flex:unset;
-        margin-bottom: 28px;
-    }
-
-
-    .act_largeur{
-        min-width: 220px;
-        flex:1;
-        margin-right:0px;
-        height: 200px;
-        
-    }
-    
-    .act_space{
-        flex:2;
-        flex-direction:row ;
-        justify-content: unset; 
-        min-width: unset;
-        max-width:unset;
-        margin-right: unset;
-        height: 200px;
-        width:100%;
-    }
-    
-    
-    .act_space_link_margin{
-        margin-right: clamp(2rem, -20.3857rem + 46.6368vw, 8.5rem);
-        margin-left:clamp(2rem, -20.3857rem + 46.6368vw, 8.5rem);
-    }
-    
-    
-    
-    #act_ndg, #act_longchamp, #act_fort,#act_frioul {
-        width: 220px;
-        height:200px;
-        flex:1;
-    }
-    
-    
-    .act_description {
-        height:45px;
-        display :flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    /* footer */
-    .page_footer{
-        background-color: white;
-    }
-}
-
-/* Format smartphone (<768px) */ 
-@media all and (max-width: 767px){
-   /* global properties */
-    .bloc_page{
-        width:auto;
-    }
-    
-    h1{
-        font-size: 145%;
-    }
-    
-    h2{
-        font-size: 135%;
-    }
-    
-    h3{
-        font-size: 125%;
-    }
-    p{
-        font-size: 95%;
-        font-family: 'ralewayregular';
-        color:black;
-    }
-    
-    /* header */
-    
-    header{
-        flex-direction:column;
-    }
-    
-    .logo_nav{
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        margin: auto;
-    }
-    nav{
-        width:100%;
-    }
-    nav ul{
-        padding-left: 0;  
+        display:flex;
+        flex-direction: row;
         justify-content: space-between;
-    }
-    
-    nav li{
+        margin-right: min(5%, 20px);
         flex:1;
-        text-align: center;
-        margin-right: unset;
-        padding-bottom: 10px;
-        border-bottom:2px solid #F2F2F2;    
-    }
-    nav li:active{
-        color: #0065FC;
-        border-bottom:2px solid #0065FC;
     }
     
-    nav a{
-        font-size: 90%;
+    .act_photo{
+        display:flex;
+        align-items: flex-end;
+        border-radius: 13px;
+        box-shadow: 2px 2px 2px #BBB9B7;
     }
     
-    nav a:hover{
-        border-top: none;
-    }
-    
-    
-  
-    
-    /* search section */
-    
-    form{
-        width: auto;
-        
-    }  
-    
-    .recherche{
-        width: auto;    
-        align-items: center;
-    }
-    #rechercher{
-        display:none;
-    }   
-    
-    #loupe{
-        display:block;
-    }
-    /* filters */
-    
-    .filtre_glob{
-        flex-direction:column;
-    }
-    
-    .filtre_glob h2{
-        font-size: 120%;
-    }
-    
-    .filtre_form{
-        flex-wrap: wrap;
-        padding-left: 20px;
-    }
-    
-    .filtre_btn{
-        margin-left: 0px;
-        margin-right:10px;
-        margin-bottom:10px;
-    }
-    
-    .filtre_p{
-        font-family: 'ralewayregular', Arial, sans-serif;
-        padding-right: 10px;
-    }
-    
-    /* Main section */
-
-    .city_main{
+    .act_largeur, .act_space{
+        flex:1;
+        min-width: 185px;
+        max-width:220px;
+        margin-right: min(1.6%, 30px);
+        height: 300px;
+        width:100%;
         display:flex;
         flex-direction: column;
-    }
-    
-    /*  popular section */
-    
-    .hebergement {
-        width:auto;
-        flex-direction: column-reverse;
-    }
-    
-    .heberg_popu{
-        padding-bottom: 30px;
-        margin-bottom: 10px;
-        border-radius: 0px;
-        width: auto;
-    }
-    .heberg_popu_main{
-        width:auto;
-    }
-    
-    .host_p_center{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-        height: 120px;
-    }
-    .host_p{
-        width:100%;
-        height:100%;
-        min-height: 90px;
-        min-width: 228px;
-        margin-left: 0px;
-    }
-    
-    .img_p{
-        width: 40%;
-        /* flex:1; */
-    }
-    
-    .description_p{
-        width:60%;
-        /* flex:2; */
-    }
-    .text_desc_p h3{
-        margin-top: 10px;
-        /* font-size: 120%; */
-    }
-    
-    
-    /* hébergement section */
-    
-    .heberg_glob{
-        width:auto;
-        margin-right: 0px;
-        margin-left: 0px;
-        background-color: white;
-        border-radius: 0px ;
-    }
-    
-    .heberg_glob_main{
-        flex-direction: column;
-        width:auto;
-        padding-left: 0px;
-        margin-left: 0px;
-        
-    }
-    .description h3{
-        font-size:105%
-    }
-    .host-link{
-        width:auto;
-        height:170px;
-        min-width: 192px;
-        margin-left: 20px;
-        
-    }
-    
-    .host_down{
-        width: auto;
-        height:170px;
-        min-width: 192px;
-        margin-left: 20px;
-        
-    }
-    
-    .more{
-        background-color: white;
-    }
-    
-    
-    /* activity section */
-    
-    .activite h3{
-        margin-left: 10px;
-        font-size: 110%;
-    }
-    .activite_main{
-        width: 100%;
-        flex-direction: column;
-        margin-right: 20px;
-    }
-    
-    .activite_main_half{
-        width:auto;
-        flex-direction: column;
         justify-content: space-between;
-        margin-right: min(8%, 31px);
-    }
-    
-    .act_largeur{
-        width:auto;
-        min-width: unset;
-        max-width: unset;
-    }
-    .act_space{
-        width:auto;
-        min-width:unset;
-        max-width: unset;
-        margin-bottom: 20px;
-    }
-    .act_space_div_phone{
-        width:auto;
-    }
-    
-    .act_space a {
-        margin-top:20px
     }
     
     #act_vp, #act_calanques{
-        width:auto;
-        height: 170px ;
+        height: 300px ;
     }
     
-    #act_fort, #act_frioul, #act_ndg, #act_longchamp{
-        width: 100%; 
-        height: 170px;
-    }
-    
-    .act_description {
-        height:27%;
-        display :flex;
+    .act_description{
+        background-color: white;
+        width:calc(100%);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display:inline-block;
+        height:35px;
+        border-radius: 0px 0px 11px 11px;
+        padding-left:10px;
+        font-size: 90%;  
+        display:flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: center; 
     }
+    
+    .act_description h3{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    
+    #act_vp{
+        background: url('../assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #act_fort{
+        height: 160px;
+        background: url('../assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        width:100%;
+    }
+    
+    #act_frioul{
+        height:110px;
+        background: url('../assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        width:100%;
+        
+    }
+    
+    #act_calanques{
+        background: url('../assets/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #act_ndg{
+        height: 130px;
+        background: url('../assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        width:100%;
+    }
+    
+    #act_longchamp{
+        height:140px;
+        background: url('../assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        width:100%;
+    }
+    
     
     /* footer */
     .page_footer{
-        width: auto;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 20px;
-    }
-    .f_div{
-        width:160px;
+        display:flex;
+        background-color: #F2F2F2;
+        margin: auto;
+        max-width:992px;
+        padding:0 min(20px, 100px);
+        font-family: 'ralewaythin', Arial, sans-serif;
+        color: black;
     }
     
-}
+    .f_div{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 30%;
+    }
+    
+    .f_header{
+        margin-top: 10px;
+    }
+    
+    .f_header h2{
+        padding-left: 0;
+        font-size:120%;
+    }    
+    
+    
+    footer ul{
+        list-style-type: none;
+        padding-left: 0px;
+        margin-top: 0px;
+    }
+    
+    footer a{
+        color: black;
+        text-decoration: none;
+        font-size: 80%;
+        
+    }
+    
+    .page_footer a:hover{
+        text-decoration: underline;
+    } 
+    
+    
+    /* ------------------------------Responsiveness------------------------------ */
+    
+    
+    
+    /* tablet (768 à 991px) */
+    @media all and (min-width: 768px) and (max-width: 991px){
+        .bloc_page{
+            width:auto;
+        }
+        
+        /* global properties */
+        h1{
+            font-size: 130%;
+        }
+        
+        h2{
+            font-size: 120%;
+        }
+        
+        h3{
+            font-size: 100%;
+        }
+        p{
+            font-size: 90%;
+            font-family: 'ralewayregular';
+            color:black;
+        }
+        
+        /* Header */
+        nav{
+            width:auto;
+            
+        }
+        .recherche{
+            width: auto;    
+            align-items: center;
+        }
+        
+        .filtre_p{
+            font-family: 'ralewayregular', Arial, sans-serif;
+        }
+        
+        
+        /* Main section */
+        
+        /* popular section  */
+        
+        .hebergement {
+            width:auto;
+            flex-direction: column-reverse;
+        }
+        
+        aside{
+            padding-right: 0px;
+        }
+        
+        .heberg_popu_icon{
+            margin-right: 20px;
+        }
+        .heberg_popu_main{
+            flex-direction: row;
+            justify-content: space-between;
+            width: auto;
+            margin-bottom: 20px;
+        }
+        
+        .host_p_center{
+            flex:1;
+            width:auto;
+            margin-right: 20px;
+        }
+        
+        .host_p{
+            width:100%;
+            
+        }
+        
+        .text_desc_p h3{
+            font-size:100%        
+        }
+        
+        
+        /* hebergement section */
+        
+        .heberg_glob{
+            width:auto;
+            margin-right: 0px;
+            margin-left: 0px;
+            background-color: white;
+            border-radius: 0px ;
+        }
+        
+        .host-link{
+            flex:1;
+            width:30%;
+            height:170px;
+            min-width: 192px;
+            margin-left: 20px;
+            
+        }
+        
+        .host_down{
+            width: 30%;
+            height:170px;
+            min-width: 192px;
+            margin-left: 20px;
+            
+        }
+        
+        .more{
+            background-color: white;
+        }
+        
+        /* activity section */
+        
+        .activite{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            margin-top:0;
+            background-color:#F2F2F2;
+            border-radius: 12px;
+            padding-top: 15px;
+        }
+        .activite h1{
+            margin-left: 20px;
+        }
+        
+        .activite_main{
+            width:auto;
+            padding-left: 20px;
+            padding-right: 20px;
+            flex-direction: column;
+            margin-right:unset;
+            margin-bottom:0px;
+        }
+        .activite_main_half{
+            width: 100%;
+            margin-right: unset;
+            justify-content: unset;
+            flex:unset;
+            margin-bottom: 28px;
+        }
+        
+        
+        .act_largeur{
+            min-width: 220px;
+            flex:1;
+            margin-right:0px;
+            height: 200px;
+            
+        }
+        
+        .act_space{
+            flex:2;
+            flex-direction:row ;
+            justify-content: unset; 
+            min-width: unset;
+            max-width:unset;
+            margin-right: unset;
+            height: 200px;
+            width:100%;
+        }
+        
+        
+        .act_space_link_margin{
+            margin-right: clamp(2rem, -20.3857rem + 46.6368vw, 8.5rem);
+            margin-left:clamp(2rem, -20.3857rem + 46.6368vw, 8.5rem);
+        }
+        
+        
+        
+        #act_ndg, #act_longchamp, #act_fort,#act_frioul {
+            width: 220px;
+            height:200px;
+            flex:1;
+        }
+        
+        
+        .act_description {
+            height:45px;
+            display :flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        /* footer */
+        .page_footer{
+            background-color: white;
+        }
+    }
+    
+    /* Format smartphone (<768px) */ 
+    @media all and (max-width: 767px){
+        /* global properties */
+        .bloc_page{
+            width:auto;
+        }
+        
+        h1{
+            font-size: 145%;
+        }
+        
+        h2{
+            font-size: 135%;
+        }
+        
+        h3{
+            font-size: 125%;
+        }
+        p{
+            font-size: 95%;
+            font-family: 'ralewayregular';
+            color:black;
+        }
+        
+        /* header */
+        
+        header{
+            flex-direction:column;
+        }
+        
+        .logo_nav{
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin: auto;
+        }
+        nav{
+            width:100%;
+        }
+        nav ul{
+            padding-left: 0;  
+            justify-content: space-between;
+        }
+        
+        nav li{
+            flex:1;
+            text-align: center;
+            margin-right: unset;
+            padding-bottom: 10px;
+            border-bottom:2px solid #F2F2F2;    
+        }
+        nav li:active{
+            color: #0065FC;
+            border-bottom:2px solid #0065FC;
+        }
+        
+        nav a{
+            font-size: 90%;
+        }
+        
+        nav a:hover{
+            border-top: none;
+        }
+        
+        
+        
+        
+        /* search section */
+        
+        form{
+            width: auto;
+            
+        }  
+        
+        .recherche{
+            width: auto;    
+            align-items: center;
+        }
+        #rechercher{
+            display:none;
+        }   
+        
+        #loupe{
+            display:block;
+        }
+        /* filters */
+        
+        .filtre_glob{
+            flex-direction:column;
+        }
+        
+        .filtre_glob h2{
+            font-size: 120%;
+        }
+        
+        .filtre_form{
+            flex-wrap: wrap;
+            padding-left: 20px;
+        }
+        
+        .filtre_btn{
+            margin-left: 0px;
+            margin-right:10px;
+            margin-bottom:10px;
+        }
+        
+        .filtre_p{
+            font-family: 'ralewayregular', Arial, sans-serif;
+            padding-right: 10px;
+        }
+        
+        /* Main section */
+        
+        .city_main{
+            display:flex;
+            flex-direction: column;
+        }
+        
+        /*  popular section */
+        
+        .hebergement {
+            width:auto;
+            flex-direction: column-reverse;
+        }
+        
+        .heberg_popu{
+            padding-bottom: 30px;
+            margin-bottom: 10px;
+            border-radius: 0px;
+            width: auto;
+        }
+        .heberg_popu_main{
+            width:auto;
+        }
+        
+        .host_p_center{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            height: 120px;
+        }
+        .host_p{
+            width:100%;
+            height:100%;
+            min-height: 90px;
+            min-width: 228px;
+            margin-left: 0px;
+        }
+        
+        .img_p{
+            width: 40%;
+            /* flex:1; */
+        }
+        
+        .description_p{
+            width:60%;
+            /* flex:2; */
+        }
+        .text_desc_p h3{
+            margin-top: 10px;
+            /* font-size: 120%; */
+        }
+        
+        
+        /* hébergement section */
+        
+        .heberg_glob{
+            width:auto;
+            margin-right: 0px;
+            margin-left: 0px;
+            background-color: white;
+            border-radius: 0px ;
+        }
+        
+        .heberg_glob_main{
+            flex-direction: column;
+            width:auto;
+            padding-left: 0px;
+            margin-left: 0px;
+            
+        }
+        .description h3{
+            font-size:105%
+        }
+        .host-link{
+            width:auto;
+            height:170px;
+            min-width: 192px;
+            margin-left: 20px;
+            
+        }
+        
+        .host_down{
+            width: auto;
+            height:170px;
+            min-width: 192px;
+            margin-left: 20px;
+            
+        }
+        
+        .more{
+            background-color: white;
+        }
+        
+        
+        /* activity section */
+        
+        .activite h3{
+            margin-left: 10px;
+            font-size: 110%;
+        }
+        .activite_main{
+            width: 100%;
+            flex-direction: column;
+            margin-right: 20px;
+        }
+        
+        .activite_main_half{
+            width:auto;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-right: min(8%, 31px);
+        }
+        
+        .act_largeur{
+            width:auto;
+            min-width: unset;
+            max-width: unset;
+        }
+        .act_space{
+            width:auto;
+            min-width:unset;
+            max-width: unset;
+            margin-bottom: 20px;
+        }
+        .act_space_div_phone{
+            width:auto;
+        }
+        
+        .act_space a {
+            margin-top:20px
+        }
+        
+        #act_vp, #act_calanques{
+            width:auto;
+            height: 170px ;
+        }
+        
+        #act_fort, #act_frioul, #act_ndg, #act_longchamp{
+            width: 100%; 
+            height: 170px;
+        }
+        
+        .act_description {
+            height:27%;
+            display :flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        /* footer */
+        .page_footer{
+            width: auto;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 20px;
+        }
+        .f_div{
+            width:160px;
+        }
+        
+    }
