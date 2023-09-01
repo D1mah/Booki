@@ -633,18 +633,18 @@ footer a{
     
     /* global properties */
     h1{
-        font-size: 115%;
+        font-size: 130%;
     }
     
     h2{
-        font-size: 105%;
+        font-size: 120%;
     }
     
     h3{
-        font-size: 90%;
+        font-size: 100%;
     }
     p{
-        font-size: 85%;
+        font-size: 90%;
         font-family: 'ralewayregular';
         color:black;
     }
@@ -677,6 +677,9 @@ footer a{
         padding-right: 0px;
     }
     
+    .heberg_popu_icon{
+        margin-right: 20px;
+    }
     .heberg_popu_main{
         flex-direction: row;
         justify-content: space-between;
@@ -922,6 +925,11 @@ footer a{
     }
     
     /* Main section */
+
+    .city_main{
+        display:flex;
+        flex-direction: column;
+    }
     
     /*  popular section */
     

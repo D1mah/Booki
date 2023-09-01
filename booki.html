@@ -11,56 +11,55 @@
 
 <body class="bloc_page">
 
- <!-- header de la page : Logo + navigation-->
- <header class="logo_nav">    
-    <img src="./assets/images/logo/Booki.png" alt="Logo de Booki">   
+ <!-- header de la page : Logo + navigation + Search section (search engine by city (form) + filters + p (serch results)) -->
+ <header >    
+   <div class="logo_nav"> <img src="./assets/images/logo/Booki.png" alt="Logo de Booki">   
     <nav>
         <ul>
             <li><a href="#hebergement">Hébergements</a></li>
             <li><a href="#activite">Activités</a></li>
         </ul>
-    </nav>     
+    </nav>    
+    </div>
+    <section class="recherche">  
+            
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="header_p">En plein centre ville ou en pleine nature</p>
+        
+        <form method= "post" action="traitement.php" >
+            <button id="geoloc"><i class="fa-solid fa-location-dot"></i></button>
+            <input id="search" type="search" placeholder="Marseille, France" >
+            <input id="rechercher" type="submit" value="Rechercher">
+            <button id="loupe" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        
+        
+        <div class="filtre_glob">
+            <h2> Filtres</h2>
+            <div class="filtre_form">
+                
+                <div class="filtre_btn">
+                    <div class="filtre_icon filtre_money">
+                        <i class="fa-solid fa-money-bill-1-wave "></i>
+                    </div>
+                    <p>Economique</p>
+                </div>  
+                <div class="filtre_btn"> <div class="filtre_icon filtre_child"><i class="fa-solid fa-child "></i></div><p>Familial</p></div>
+                <div class="filtre_btn"><div class="filtre_icon filtre_heart" ><i class="fa-solid fa-heart "></i></div><p>Romantique</p></div>
+                <div class="filtre_btn"><div class="filtre_icon filtre_dog" ><i class="fa-solid fa-dog"></i></div><p>Animaux autorisés</p></div>
+            </div>
+        </div>
+        
+        <p class="header_p filtre_p"><i class="fa-solid fa-circle-info filtre_info_icon "></i>  Plus de 500 logements sont disponibles dans cette ville</p>
+    </section>
+    
 </header>
 
 
-<!-- Search Section :  search engine by city (form) + filters + p (serch results) -->
-
-<section class="recherche">  
-            
-    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-    <p class="header_p">En plein centre ville ou en pleine nature</p>
-    
-    <form method= "post" action="traitement.php" >
-        <button id="geoloc"><i class="fa-solid fa-location-dot"></i></button>
-        <input id="search" type="search" placeholder="Marseille, France" >
-        <input id="rechercher" type="submit" value="Rechercher">
-        <button id="loupe" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </form>
-    
-    
-    <div class="filtre_glob">
-        <h2> Filtres</h2>
-        <div class="filtre_form">
-            
-            <div class="filtre_btn">
-                <div class="filtre_icon filtre_money">
-                    <i class="fa-solid fa-money-bill-1-wave "></i>
-                </div>
-                <p>Economique</p>
-            </div>  
-            <div class="filtre_btn"> <div class="filtre_icon filtre_child"><i class="fa-solid fa-child "></i></div><p>Familial</p></div>
-            <div class="filtre_btn"><div class="filtre_icon filtre_heart" ><i class="fa-solid fa-heart "></i></div><p>Romantique</p></div>
-            <div class="filtre_btn"><div class="filtre_icon filtre_dog" ><i class="fa-solid fa-dog"></i></div><p>Animaux autorisés</p></div>
-        </div>
-    </div>
-    
-    <p class="header_p filtre_p"><i class="fa-solid fa-circle-info filtre_info_icon "></i>  Plus de 500 logements sont disponibles dans cette ville</p>
-</section>
-
-
 <!-- Main: en rapport au H1 du site: concerne section hebergement + aside hebergement populaire -->
-<main class="hebergement">
-    <section class="heberg_glob"> 
+<main class="city_main" >
+    <section class="hebergement">
+    <section id="hebergement" class="heberg_glob"> 
         
         <h2>Hébergements à Marseille</h2>      
         <div class="heberg_glob_main">
@@ -141,7 +140,7 @@
                         
                         <a href="#" class="host_p_center">
                             <div class="host_p">
-                                <div class="img_p"><img class="img_size" src="../assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Le Soleil du matin"></div>
+                                <div class="img_p"><img class="img_size" src="./assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Le Soleil du matin"></div>
                                 <div class="description_p">
                                     <div class="text_desc_p">
                                         <h3>Hôtel Le soleil du matin</h3>
@@ -155,7 +154,7 @@
                         
                         <a href="#" class="host_p_center"> 
                             <div class="host_p"> 
-                                <div class="img_p"> <img class="img_size" src="../assets/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au Coeur de l'eau"></div>
+                                <div class="img_p"> <img class="img_size" src="./assets/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au Coeur de l'eau"></div>
                                 <div class="description_p">
                                     <div class="text_desc_p">
                                         <h3>Au coeur de l'eau Chambres d'hotes</h3>
@@ -167,7 +166,7 @@
                         </a>
                         
                         <a href="#" class="host_p_center"> <div  class="host_p">
-                            <div class="img_p"> <img class="img_size" src="../assets/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Tout bleu et Blanc"> </div>
+                            <div class="img_p"> <img class="img_size" src="./assets/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Tout bleu et Blanc"> </div>
                             <div class="description_p">
                                 <div class="text_desc_p">
                                     <h3>Hôtel Tout bleu et Blanc</h3>
@@ -177,47 +176,52 @@
                             </div></a>
                         </div>
                     </aside>
+                </section>
+
+
+    <!-- Activity Section -->
+    <section id="activite" class="activite">
+        <h2>Activités à Marseille</h2>
+        
+        <div class="activite_main">
+
+            <div class="activite_main_half">
+            <a href="#" class="act_largeur"> <div id="act_vp" class="act_photo">
+                <div class="act_description"><h3>Vieux Port</h3></div>
+            </div></a>
+            
+            <div class="act_space">
+                <a href="#" class="act_space_link_margin"><div id="act_fort" class="act_photo">
+                    <div class="act_description"> <h3>Fort de Pomègues</h3></div>
+                </div></a>
+                
+                <a href="#"><div id="act_frioul" class="act_photo">
+                    <div class="act_description"><h3>Iles du Frioul</h3></div>
+                </div></a>
+            </div>
+            </div>
+
+            <div class="activite_main_half">
+            <a href="#" class="act_largeur "> <div id="act_calanques" class="act_photo">
+                <div class="act_description"><h3>Parc National des Calanques</h3></div>
+            </div></a>
+            
+            <div class="act_space">
+                <a href="#" class="act_space_link_margin act_space_div_phone"><div id="act_ndg" class="act_photo">
+                    <div class="act_description"><h3>Notre-Dame-de-la-Garde</h3></div>
+                </div></a>
+                
+                <a href="#" class="act_space_div_phone" ><div id="act_longchamp" class="act_photo">
+                    <div class="act_description"><h3>Parc Longchamp</h3></div>
+                </div></a>
+            </div>   
+        </div>
+        </div>
+    </section>
+
                 </main>
 
-                <!-- Activity Section -->
-                <section class="activite">
-                    <h2>Activités à Marseille</h2>
-                    
-                    <div class="activite_main">
-
-                        <div class="activite_main_half">
-                        <a href="#" class="act_largeur"> <div id="act_vp" class="act_photo">
-                            <div class="act_description"><h3>Vieux Port</h3></div>
-                        </div></a>
-                        
-                        <div class="act_space">
-                            <a href="#" class="act_space_link_margin"><div id="act_fort" class="act_photo">
-                                <div class="act_description"> <h3>Fort de Pomègues</h3></div>
-                            </div></a>
-                            
-                            <a href="#"><div id="act_frioul" class="act_photo">
-                                <div class="act_description"><h3>Iles du Frioul</h3></div>
-                            </div></a>
-                        </div>
-                        </div>
-
-                        <div class="activite_main_half">
-                        <a href="#" class="act_largeur "> <div id="act_calanques" class="act_photo">
-                            <div class="act_description"><h3>Parc National des Calanques</h3></div>
-                        </div></a>
-                        
-                        <div class="act_space">
-                            <a href="#" class="act_space_link_margin act_space_div_phone"><div id="act_ndg" class="act_photo">
-                                <div class="act_description"><h3>Notre-Dame-de-la-Garde</h3></div>
-                            </div></a>
-                            
-                            <a href="#" class="act_space_div_phone" ><div id="act_longchamp" class="act_photo">
-                                <div class="act_description"><h3>Parc Longchamp</h3></div>
-                            </div></a>
-                        </div>   
-                    </div>
-                    </div>
-                </section>
+                
 
 <!-- footer -->
 
@@ -256,3 +260,4 @@
 </footer>
 
 </body>
+</html>
