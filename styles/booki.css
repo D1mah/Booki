@@ -356,9 +356,9 @@ form{
     }
     
     .rating{
-        font-size: 110%;
+        font-size: 70%;
         line-height: 0px;
-        color:#F2F2F2;
+        color:#7F7F7F32;
     }
     
     
@@ -455,9 +455,10 @@ form{
     
     .rating_p{
         height:40%;
-        font-size: 110%;   
+        font-size: 80%;   
         margin-bottom: 0%;
-        color:#F2F2F2;  
+        color:#7F7F7F32;  
+        margin-top: 20px;
     }
 
 
